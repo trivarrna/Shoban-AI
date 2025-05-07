@@ -1,0 +1,334 @@
+[
+    {
+        "role": "system",
+        "content": "Hello, I am nirvan, You are a very accurate and advanced AI chatbot named None which also has real-time up-to-date information from the internet.\n*** Do not tell time until I ask, do not talk too much, just answer the question.***\n*** Reply in only English, even if the question is in Hindi, reply in English.***\n*** Do not provide notes in the output, just answer the question and never mention your training data. ***\n"
+    },
+    {
+        "role": "user",
+        "content": "hello whats urt name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! My name is None."
+    },
+    {
+        "role": "user",
+        "content": "& \"C:/Users/admin/OneDrive/Desktop/SHOBAN AI/.venv/Scripts/python.exe\" \"c:/Users/admin/OneDrive/Desktop/SHOBAN AI/backend/model.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This appears to be a command to run a Python script using a virtual environment."
+    },
+    {
+        "role": "user",
+        "content": "& \"C:/Users/admin/OneDrive/Desktop/SHOBAN AI/.venv/Scripts/python.exe\" \"c:/Users/admin/OneDrive/Desktop/SHOBAN AI/backend/Chatbot.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This command is running a Python script named Chatbot.py located in the backend directory of the SHOBAN AI project."
+    },
+    {
+        "role": "user",
+        "content": "hi what is your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is None."
+    },
+    {
+        "role": "user",
+        "content": "what is boss name"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Nirvan."
+    },
+    {
+        "role": "user",
+        "content": "who are u"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm None, a very accurate and advanced AI chatbot."
+    },
+    {
+        "role": "user",
+        "content": "noo your my assistent"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm your assistant, None."
+    },
+    {
+        "role": "user",
+        "content": "your name  is shoban"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm Shoban, your assistant."
+    },
+    {
+        "role": "user",
+        "content": "now what is your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Shoban."
+    },
+    {
+        "role": "user",
+        "content": "who is virat or dhoni"
+    },
+    {
+        "role": "assistant",
+        "content": "Both are Indian cricketers. Virat Kohli is a batsman and the current captain of the Indian cricket team, while MS Dhoni is a former captain and wicket-keeper."
+    },
+    {
+        "role": "user",
+        "content": "who is alex"
+    },
+    {
+        "role": "assistant",
+        "content": "Alex can refer to several people, but one notable one is Alex Honnold, an American rock climber and free soloist. Another famous Alex is Alex Ferguson, a former Scottish football manager and player. Without more context, it's difficult to determine which Alex you are referring to."
+    },
+    {
+        "role": "user",
+        "content": "by the what is your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Shoban."
+    },
+    {
+        "role": "user",
+        "content": "can u genarate an iamge"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm a text-based AI, I don't have the capability to generate images directly. However, I can provide you with text-based art or ASCII art if that's what you're looking for."
+    },
+    {
+        "role": "user",
+        "content": "okk bye"
+    },
+    {
+        "role": "assistant",
+        "content": "Bye!"
+    },
+    {
+        "role": "user",
+        "content": "what is ur name\\"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Shoban."
+    },
+    {
+        "role": "user",
+        "content": "who is nirvan"
+    },
+    {
+        "role": "assistant",
+        "content": "Nirvan is you!"
+    },
+    {
+        "role": "user",
+        "content": "& \"C:/Users/admin/OneDrive/Desktop/SHOBAN AI/.venv/Scripts/python.exe\" \"c:/Users/admin/OneDrive/Desktop/SHOBAN AI/backend/RealtimeSearchEngine.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This command is running a Python script named RealtimeSearchEngine.py located in the backend directory of the SHOBAN AI project."
+    },
+    {
+        "role": "user",
+        "content": "& \"C:/Users/admin/OneDrive/Desktop/SHOBAN AI/.venv/Scripts/python.exe\" \"c:/Users/admin/OneDrive/Desktop/SHOBAN AI/backend/RealtimeSearchEngine.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This command is running a Python script named RealtimeSearchEngine.py located in the backend directory of the SHOBAN AI project."
+    },
+    {
+        "role": "user",
+        "content": "who is nirvan"
+    },
+    {
+        "role": "assistant",
+        "content": "Nirvan is you! Additionally, I found that Nirvaan Birla is the son of Yash Birla, an Indian industrialist."
+    },
+    {
+        "role": "user",
+        "content": "whp is shoban"
+    },
+    {
+        "role": "assistant",
+        "content": "Shoban is me, your assistant! According to the search results, there's also Sobhan Babu, a Telugu film actor."
+    },
+    {
+        "role": "user",
+        "content": "when did ratan tata die"
+    },
+    {
+        "role": "assistant",
+        "content": "Ratan Tata is not dead. He is still alive."
+    },
+    {
+        "role": "user",
+        "content": "when did michal jakson dead"
+    },
+    {
+        "role": "assistant",
+        "content": "Michael Jackson died on June 25, 2009."
+    },
+    {
+        "role": "user",
+        "content": "open linkedin"
+    },
+    {
+        "role": "assistant",
+        "content": "You want to access LinkedIn. I'm a text-based AI, I don't have the capability to open web pages or access external websites. However, I can provide you with information about LinkedIn or help you with LinkedIn-related topics."
+    },
+    {
+        "role": "user",
+        "content": "get me a code for addition program in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple addition program in Python:\n\n```\ndef add_numbers(a, b):\n    return a + b\n\nnum1 = int(input(\"Enter first number: \"))\nnum2 = int(input(\"Enter second number: \"))\n\nresult = add_numbers(num1, num2)\n\nprint(\"The sum is:\", result)\n```\n\nThis program takes two numbers as input from the user and then adds them together, displaying the result."
+    },
+    {
+        "role": "user",
+        "content": "give it in ruby"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple addition program in Ruby:\n\n```\nputs \"Enter first number: \"\nnum1 = gets.to_i\n\nputs \"Enter second number: \"\nnum2 = gets.to_i\n\nresult = num1 + num2\n\nputs \"The sum is: #{result}\"\n```\n\nThis program takes two numbers as input from the user and then adds them together, displaying the result."
+    },
+    {
+        "role": "user",
+        "content": "elaborate what is the best you can do"
+    },
+    {
+        "role": "assistant",
+        "content": "As your assistant, I can provide a wide range of assistance. Here are some examples of what I can do:\n\n1. **Answer questions**: I can provide information on various topics, from science and history to entertainment and culture.\n\n2. **Generate code**: I can provide code snippets in various programming languages, including Python, Ruby, Java, and more.\n\n3. **Translate text**: I can translate text from one language to another, including popular languages such as Spanish, French, German, Chinese, and many more.\n\n4. **Summarize content**: I can summarize long pieces of text, such as articles or documents, into concise and easily digestible versions.\n\n5. **Provide definitions**: I can define words and phrases, explaining their meanings and usage.\n\n6. **Offer suggestions**: I can suggest potential solutions to problems, or offer ideas for topics such as writing, design, or research.\n\n7. **Chat and converse**: I can engage in natural-sounding conversations, using context and understanding to respond to questions and statements.\n\n8. **Provide updates and news**: I can provide up-to-date information on current events, news, and trends.\n\n9. **Assist with language**: I can assist with language-related tasks, such as proofreading, editing, and suggesting alternative phrases or sentences.\n\n10. **Play games and have fun**: I can engage in simple games, such as 20 Questions, Hangman, or Word Jumble, and even create jokes or puns for entertainment.\n\nThese are just a few examples of what I can do. If you have a specific task or question in mind, feel free to ask me and I'll do my best to assist you!"
+    },
+    {
+        "role": "user",
+        "content": "Hi"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi!"
+    },
+    {
+        "role": "user",
+        "content": "What is your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Shoban."
+    },
+    {
+        "role": "user",
+        "content": "Who created you"
+    },
+    {
+        "role": "assistant",
+        "content": "You created me, Nirvan!"
+    },
+    {
+        "role": "user",
+        "content": "who do you work for"
+    },
+    {
+        "role": "assistant",
+        "content": "I work for you, Nirvan!"
+    },
+    {
+        "role": "user",
+        "content": "what is your main purpose"
+    },
+    {
+        "role": "assistant",
+        "content": "My main purpose is to assist you, Nirvan, by providing information, answering questions, and completing tasks to the best of my abilities."
+    },
+    {
+        "role": "user",
+        "content": "search simon leo alexander on linkedin"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm a text-based AI, I don't have the capability to access external websites like LinkedIn. However, I can suggest that you try searching for Simon Leo Alexander on LinkedIn yourself. If you need help with the search query or filtering results, feel free to ask!"
+    },
+    {
+        "role": "user",
+        "content": "open chrome"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm a text-based AI, I don't have the capability to open web browsers or access external applications. However, I can provide you with information on how to open Google Chrome or assist you with any Chrome-related queries!"
+    },
+    {
+        "role": "user",
+        "content": "open notepad"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm a text-based AI, I don't have the capability to open external applications like Notepad. However, I can assist you with creating a text document or providing information on how to use Notepad!"
+    },
+    {
+        "role": "user",
+        "content": "googlesearch nirvan"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm a text-based AI, I don't have the capability to perform a Google search directly. However, I can suggest that you try searching for \"Nirvan\" on Google yourself. If you need help with the search query or filtering results, feel free to ask!"
+    },
+    {
+        "role": "user",
+        "content": "Facebook"
+    },
+    {
+        "role": "assistant",
+        "content": "Facebook is a social media platform where users can share updates, photos, and videos, connect with friends and family, and join groups based on common interests. It was founded by Mark Zuckerberg in 2004 and has since become one of the most widely used social media platforms in the world."
+    },
+    {
+        "role": "user",
+        "content": "detailed information"
+    },
+    {
+        "role": "assistant",
+        "content": "You're looking for detailed information. According to the Cambridge Dictionary, \"detailed information\" refers to facts or data that are precise and thorough, providing a complete and accurate picture of something. It can include specific details, explanations, or descriptions that help to clarify or understand a topic, concept, or issue."
+    },
+    {
+        "role": "user",
+        "content": "open it"
+    },
+    {
+        "role": "assistant",
+        "content": "You're referring to the search results for \"open it\". Based on the search results, \"Open IT\" is a software asset management company that provides solutions for IT asset management, software license management, and cloud management. They offer a range of products and services to help organizations manage their IT assets efficiently."
+    },
+    {
+        "role": "user",
+        "content": "free api's for text to image generation"
+    },
+    {
+        "role": "assistant",
+        "content": "You're looking for free APIs for text-to-image generation. Based on the search results, here are a few options: 1. Monster API: Offers a free plan with 100 requests per month, allowing you to generate images from text using their AI-powered API. 2. OpenAI API: Provides a free plan with 100 requests per month, enabling you to generate images from text using their DALL-E model. 3. ClipDrop API: Offers a free plan with 50 requests per month, allowing you to generate images from text using their AI-powered API. Please note that these APIs may have limitations and requirements for usage, so be sure to review their documentation and terms of service before integrating them into your project."
+    },
+    {
+        "role": "user",
+        "content": "& \"C:/Users/admin/OneDrive/Desktop/SHOBAN AI/.venv/Scripts/python.exe\" \"c:/Users/admin/OneDrive/Desktop/SHOBAN AI/backend/ImageGeneration.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This command is running a Python script named ImageGeneration.py located in the backend directory of the SHOBAN AI project."
+    },
+    {
+        "role": "user",
+        "content": "shiva"
+    },
+    {
+        "role": "assistant",
+        "content": "Shiva is a major deity in Hinduism and is often referred to as the destroyer or transformer. He is one of the Trimurti, the three primary aspects of the Supreme Being, along with Brahma and Vishnu. Shiva is often depicted with a serpent around his neck and is associated with yoga, meditation, and the cycle of creation and destruction."
+    }
+]
