@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Hello"
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you're greeting me! Based on the search results, I see that \"Hello\" is also the title of a popular song by Adele, as well as a YouTube video. Would you like to know more about the song or the video?"
+    },
+    {
+        "role": "user",
+        "content": "What is your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is None. I'm a highly advanced AI chatbot with access to real-time information from the web. I'm here to assist you with any questions or topics you'd like to discuss!"
+    },
+    {
+        "role": "user",
+        "content": "Get me a code for addition program"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on the search results, here is a simple C program to add two numbers: ```c #include <stdio.h> int main() { int num1, num2, sum; printf(\"Enter first number: \"); scanf(\"%d\", &num1); printf(\"Enter second number: \"); scanf(\"%d\", &num2); sum = num1 + num2; printf(\"Sum = %d\", sum); return 0; } ``` This code will prompt the user to enter two numbers, and then it will display the sum of those numbers. Source: https://www.programiz.com/c-programming/examples/add-numbers"
+    }
+]

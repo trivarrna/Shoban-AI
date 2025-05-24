@@ -13,7 +13,8 @@ env_vars = dotenv_values(".env")
 # Retrieve environment variables for the chatbot configuration
 Username = env_vars.get("Username")
 Assistantname = env_vars.get("Assistantname")
-GroqAPIkey = env_vars.get("GroqAPIKey")
+# GroqAPIkey = env_vars.get("GroqAPIKey")
+GroqAPIkey = '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'
 
 # Initialize the Groq client with the provided API key
 client = Groq(api_key=GroqAPIkey)
