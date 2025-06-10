@@ -30,5 +30,133 @@
     {
         "role": "assistant",
         "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(a + b) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "get me an addition code on python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(\"The sum is: \", a + b) ```"
+    },
+    {
+        "role": "user",
+        "content": "give me a c program code for knapsack problem"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a C program code for the 0/1 Knapsack Problem using dynamic programming: ```c #include<stdio.h> int max(int a, int b) { return (a > b)? a : b; } int knapSack(int W, int wt[], int val[], int n) { int i, w; int K[n+1][W+1]; for (i = 0; i <= n; i++) { for (w = 0; w <= W; w++) { if (i==0 || w==0) K[i][w] = 0; else if (wt[i-1] <= w) K[i][w] = max(val[i-1] + K[i-1][w-wt[i-1]], K[i-1][w]); else K[i][w] = K[i-1][w]; } } return K[n][W]; } int main() { int val[] = {60, 100, 120}; int wt[] = {10, 20, 30}; int n = sizeof(val)/sizeof(val[0]); int W = 50; printf(\"%d\", knapSack(W, wt, val, n)); return 0; } ``` This program solves the 0/1 Knapsack Problem where we have `n` items each with a weight `wt[i]` and a value `val[i]`. We need to determine the subset of these items to include in a knapsack of capacity `W` that maximizes the total value while not exceeding the knapsack's weight capacity. Please note that you need to adjust the values in the `val` and `wt` arrays, as well as the `W` variable, to match the specific problem you are trying to solve."
+    },
+    {
+        "role": "user",
+        "content": "write me an addition code in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(\"The sum is: \", a + b) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me a python code for addition"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(a + b) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me code for pivot table in excel"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is an example of how to create a pivot table in Excel using the `openpyxl` library: ``` from openpyxl import load_workbook # Load the workbook wb = load_workbook(filename='example.xlsx') # Select the worksheet ws = wb['Sheet1'] # Create a pivot table from openpyxl.worksheet.pivot import PivotTable, PivotFactory pivot_table = PivotFactory('PivotTable').create.pivot_table( table_range='A1:C10', row_labels='A', col_labels='B', values='C', pivot_fields=['A', 'B'], pivot_values='Sum of C' ) # Add the pivot table to the worksheet ws.add_table(pivot_table) # Save the workbook wb.save(\"output.xlsx\") ``` This code will create a pivot table in a new Excel file called `output.xlsx` based on the data in the `example.xlsx` file."
+    },
+    {
+        "role": "user",
+        "content": "slowly"
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you typed \"slowly\". If you're looking for information about the word \"slowly\", I can provide you with some information. According to Merriam-Webster, \"slowly\" is an adverb that means \"at a slow rate\" or \"in a slow manner\". For example: * She walked slowly across the room. * The clock ticked slowly. If you have any other questions or need further clarification, please let me know!"
+    },
+    {
+        "role": "user",
+        "content": "give me a basic python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Python code that prints \"Hello, World!\" to the screen: ``` print(\"Hello, World!\") ``` This code uses the built-in `print()` function to output the string \"Hello, World!\" to the console."
+    },
+    {
+        "role": "user",
+        "content": "give me a basic python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Python code that prints \"Hello, World!\" to the screen: ``` name = input(\"Enter your name: \") print(\"Hello, \" + name + \"!\") ``` This code uses the `input()` function to get the user's name, and then prints out a greeting message with the user's name."
+    },
+    {
+        "role": "user",
+        "content": "give me a code for addition in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` num1 = int(input(\"Enter first number: \")) num2 = int(input(\"Enter second number: \")) sum = num1 + num2) print(\"The sum is\", sum) ``` This code takes two numbers as input from the user, adds them together, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me a simple python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code that prints \"Hello, World!\" to the screen: ``` print(\"Hello, World!\") ```"
+    },
+    {
+        "role": "user",
+        "content": "give me an addition code in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(\"The sum is\", a + b) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me addition code in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(a + b) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me addition code in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 sum = a + b print(\"The sum is\", sum) ``` This code adds the numbers 5 and 10, and then prints the result."
+    },
+    {
+        "role": "user",
+        "content": "give me a python code for addition"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(a + b) ```"
+    },
+    {
+        "role": "user",
+        "content": "give me a basic python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Python code that prints \"Hello, World!\" to the screen: ``` print(\"Hello, World!\") ```"
+    },
+    {
+        "role": "user",
+        "content": "give me a python code for addition"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python code for addition: ``` a = 5 b = 10 print(a + b) ```"
     }
 ]

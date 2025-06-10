@@ -76,7 +76,7 @@ class JarvisWindow(QMainWindow):
 
         # Chat Area
         self.chat_area = QTextEdit()
-        self.chat_area.setFixedSize(400, 250)
+        self.chat_area.setFixedSize(800, 650)
         self.chat_area.setReadOnly(True)
         # self.chat_area.setStyleSheet("background-color: #1a1a1a; color: white; border: 2px solid #00c3ff;")
         self.chat_area.setStyleSheet(
@@ -89,7 +89,7 @@ class JarvisWindow(QMainWindow):
 
         # Input Field
         self.entry = QLineEdit()
-        self.entry.setFixedWidth(400)
+        self.entry.setFixedWidth(650)
         self.entry.setStyleSheet("background-color: #1a1a1a; color: white; border: 2px solid #00c3ff;")
         self.entry.returnPressed.connect(self.send_text_response)
         self.left_column.addWidget(self.entry)
@@ -149,11 +149,14 @@ class JarvisWindow(QMainWindow):
 
     def respond_to_input(self, user_input):
         response = generate_response(user_input)
-        response_lines = response.split('. ')
+        response_lines = response.split('``` ')
+
         self.chat_area.append("Jarvis:")
+
         for line in response_lines:
             if line.strip():
-                self.chat_area.append(f"• {line.strip()}.")
+                self.chat_area.append(f"{' '.join(line.split())}")
+
         speak(response)
 
     def clear_chat(self):
