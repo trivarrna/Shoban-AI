@@ -1,3 +1,4 @@
+from rich.status import Status
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -93,6 +94,10 @@ os.makedirs("Files", exist_ok=True)
 def SetAssistantStatus(Status):
     with open(rf"{TempDirPath}/Status.data", "w", encoding="utf-8") as file:
         file.write(Status)
+
+def GetAssistantStatus():
+    with open(rf"{TempDirPath}/Status.data","r") as file:
+        file.read()
 
 # Function to modify a query to ensure proper punctuation and formatting.
 def QueryModifier(Query):

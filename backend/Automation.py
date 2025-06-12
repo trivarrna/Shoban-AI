@@ -2,7 +2,7 @@
 from AppOpener import close, open as appopen
 from webbrowser import open as webopen
 from pywhatkit import search, playonyt
-from dotenv import dotenv_values
+from dotenv import dotenv_values, load_dotenv
 from bs4 import BeautifulSoup
 from rich import print
 from groq import Groq
@@ -13,9 +13,11 @@ import keyboard
 import asyncio
 import os
 
+
+load_dotenv()
 # Load environment variables from the .env file
-env_vars = dotenv_values(".env")
-GroqAPIKey = env_vars.get("GroqAPIKey")
+#env_vars = dotenv_values(".env")
+GroqAPIKey = os.getenv("GroqAPIKey")
 
 # Define CSS classes for parsing specific elements in HTML content
 classes = ["zCubwf", "hgKElc", "LtkOO sy7ric", "zOLcW", "gsrt"]

@@ -1,15 +1,24 @@
+import os
+
 import cohere  # Import the Cohere library for AI services.
 from rich import print  # Import the Rich library to enhance terminal outputs.
-from dotenv import dotenv_values  # Import dotenv to load environment variables from a .env file.
+from dotenv import dotenv_values, load_dotenv  # Import dotenv to load environment variables from a .env file.
 
+load_dotenv()
 # Load environment variables from the .env file.
-env_vars = dotenv_values(".env")
+#env_vars = dotenv_values(".env")
 
 # Retrieve API key.
-CohereAPIKey = env_vars.get("CohereAPIKey")
+CohereAPIKey = os.getenv("CohereAPIKey")
+
+
+try:
+    co = cohere.Client(api_key=CohereAPIKey)
+except Exception as e:
+    raise ValueError(f"Failed to initialize Cohere client: {str(e)}")
 
 # Create a Cohere client using the provided API key.
-co = cohere.Client(api_key=CohereAPIKey)
+# co = cohere.Client(api_key=CohereAPIKey)
 
 # Define a list of recognized function keywords for task categorization.
 funcs = [

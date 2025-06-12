@@ -50,12 +50,13 @@ from dotenv import dotenv_values
 # Frontend Components
 from Frontend.GUI import JarvisWindow
 from Frontend.interface import (
-    SetAssistantStatus,
-    GetAssistantStatus,
     ShowTextToScreen,
     SetMicrophoneStatus,
     GetMicrophoneStatus
 )
+
+from backend.SpeechToText import SetAssistantStatus
+from backend.SpeechToText import GetAssistantStatus
 
 
 # Load environment variables
@@ -112,11 +113,11 @@ def ShowChatsOnGUI():
 # Initial setup function
 def InitialExecution():
     """Perform initial setup for the assistant."""
-    SetMicrophoneStatus("False")
-    ShowTextToScreen("")
-    ShowDefaultChatIfNoChats()
-    ChatLogIntegration()
-    ShowChatsOnGUI()
+    # SetMicrophoneStatus("False")
+    # ShowTextToScreen("")
+    # ShowDefaultChatIfNoChats()
+    # ChatLogIntegration()
+    # ShowChatsOnGUI()
 
 # Main execution logic
 def MainExecution():
@@ -188,13 +189,12 @@ def MainExecution():
                 os._exit(1)
 
 # Thread functions
+from time import sleep
+
+
 def FirstThread():
     """Continuously monitor microphone status and execute main logic."""
     while True:
-        CurrentStatus = GetMicrophoneStatus()
-        if CurrentStatus == "True":
-            MainExecution()
-        else:
             AIStatus = GetAssistantStatus()
             if "Available..." in AIStatus:
                 sleep(0.1)
