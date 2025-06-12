@@ -250,5 +250,29 @@
     {
         "role": "assistant",
         "content": "I'm a large language model, I don't have the capability to open Google Chrome or any other application on your device. However, I can guide you on how to open Google Chrome:\n\n1. **Windows**: Click on the Start menu and type \"Google Chrome\" in the search bar. Click on the Google Chrome icon to open the browser.\n2. **Mac**: Click on the Applications folder and then click on Google Chrome to open the browser.\n3. **Android**: Tap on the Google Chrome icon on your home screen or app drawer to open the browser.\n\nIf you're having trouble finding Google Chrome, you can also try searching for \"Google Chrome\" in your device's search bar or app store to download and install it. Let me know if you need more assistance!"
+    },
+    {
+        "role": "user",
+        "content": "get me a basic python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Python code that prints \"Hello, World!\" to the screen: \n```\nprint(\"Hello, World!\")\n```"
+    },
+    {
+        "role": "user",
+        "content": "what is a condom"
+    },
+    {
+        "role": "assistant",
+        "content": "A condom is a thin, flexible sheath worn over the penis during sexual intercourse to prevent pregnancy and sexually transmitted infections (STIs). Condoms are typically made of latex, polyurethane, or lambskin, and are designed to provide a barrier between the penis and the vagina, anus, or mouth during sexual activity.\n\nCondoms work by:\n\n1. Preventing sperm from entering the vagina, thereby preventing fertilization and pregnancy.\n2. Preventing the transmission of STIs, such as chlamydia, gonorrhea, and HIV, by blocking the exchange of bodily fluids.\n\nCondoms are available in various sizes, shapes, and textures, and can be purchased at pharmacies, drugstores, and online retailers. It is essential to use condoms correctly and consistently to ensure their effectiveness.\n\nRemember, condoms are not only a means of contraception but also a vital tool for protecting one's sexual health."
+    },
+    {
+        "role": "user",
+        "content": "give me an addition program in python"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a simple Python program that adds two numbers: ``` num1 = 5 num2 = 10 sum = num1 + num2 print(\"The sum is\", sum) ``` This code takes two numbers, adds them together, and then prints the result."
     }
 ]
