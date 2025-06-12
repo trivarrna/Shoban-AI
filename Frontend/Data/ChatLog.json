@@ -206,5 +206,29 @@
     {
         "role": "assistant",
         "content": "Here is the 0/1 Knapsack Problem in C: ```c #include<stdio.h> int knapSack(int W, int wt[], int val[], int n) { int i, w; int K[n+1][W+1]; for (i = 0; i <= n; i++) { for (w = 0; w <= W; w++) { if (i==0 || w==0) K[i][w] = 0; else if (wt[i-1] <= w) K[i][w] = max(val[i-1] + K[i-1][w-wt[i-1]], K[i-1][w]); else K[i][w] = K[i-1][w]; } } return K[n][W]; } int main() { int val[] = {60, 100, 120}; int wt[] = {10, 20, 30}; int W = 50; printf(\"%d\", knapSack(W, wt, val, 3)); return 0; } ``` This C code solves the 0/1 Knapsack Problem where we have n items each with a weight wt[i] and a value val[i]. We need to determine the subset of these items to include in a knapsack of capacity W that maximizes the total value while not exceeding the knapsack's weight capacity."
+    },
+    {
+        "role": "user",
+        "content": "give me a basic python code"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Python code that prints \"Hello, World!\" to the screen: ``` print(\"Hello, World!\") ```"
+    },
+    {
+        "role": "user",
+        "content": "give me a basic java program"
+    },
+    {
+        "role": "assistant",
+        "content": "Here is a basic Java program: ``` public class HelloWorld\" { public static void main(String[] args) { System.out.println(\"Hello, World!\"); } } ``` This program prints \"Hello, World!\" to the console when run."
+    },
+    {
+        "role": "user",
+        "content": "get me any image"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on the search results, I can suggest a few options to get an image: 1. **Unsplash**: Unsplash is a popular website that offers a vast collection of high-resolution images. You can search for images by keyword, and download them for free. Website: https://unsplash.com/ 2. **Google Images**: Google Images is a search engine specifically designed for images. You can search for images by keyword, and filter the results by size, color, and more. Website: https://images.google.com/ 3. **Canva**: Canva is a graphic design platform that offers a vast collection of images, illustrations, and graphics. You can search for images by keyword, and use them for free or with a subscription. Website: https://www.canva.com/ 4. **Getty Images**: Getty Images is a stock photo website that offers a vast collection of high-quality images. You can search for images by keyword, and purchase or license them for use. Website: https://www.gettyimages.com/ Let me know if you need more options or have any specific requirements!"
     }
 ]
