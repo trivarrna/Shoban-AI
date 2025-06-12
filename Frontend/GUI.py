@@ -238,7 +238,7 @@ class JarvisWindow(QMainWindow):
         self.typing_indicator = QLabel()
         self.typing_indicator.setAlignment(Qt.AlignRight)
         self.typing_indicator.setStyleSheet("""
-            color: rgba(0, 255, 204, 0.7); 
+            color: rgba(0, 255, 204, 0.7);
             font-style: italic;
             font-size: 12px;
             padding-right: 10px;
