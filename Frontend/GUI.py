@@ -4,18 +4,20 @@ import datetime
 import pyttsx3
 import speech_recognition as sr
 from PyQt5.QtCore import Qt, QEvent, QTimer, QPropertyAnimation, QEasingCurve, QSize
+# from PyQt5.QtCore.QByteArray import startsWith
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel,
     QTextEdit, QLineEdit, QPushButton, QFrame, QSizePolicy
 )
 from PyQt5.QtGui import QMovie, QFont, QIcon, QColor, QTextCursor, QPalette
 from PyQt5.QtCore import pyqtProperty
-from backend.RealtimeSearchEngine import RealtimeSearchEngine
+# from backend.RealtimeSearchEngine import RealtimeSearchEngine
+from backend.Chatbot import  ChatBot
 
 # Initialize TTS engine with better voice settings
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)  # Change index for different voices
+engine.setProperty('voice', voices[2].id)  # Change index for different voices
 engine.setProperty('rate', 150)  # Slower speech rate
 
 
@@ -37,7 +39,7 @@ def generate_response(user_input):
         farewells = ["Goodbye!", "See you later!", "Have a great day!", "Until next time!"]
         return random.choice(farewells)
     else:
-        return RealtimeSearchEngine(user_input)
+        return ChatBot(user_input)
 
 
 # Speak function with error handling

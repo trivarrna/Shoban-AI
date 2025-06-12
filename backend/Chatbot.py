@@ -8,7 +8,7 @@ from dotenv import dotenv_values
 env_vars = dotenv_values(".env")
 Username = env_vars.get("Username")
 Assistantname = env_vars.get("Assistantname")
-GroqAPIKey = env_vars.get("GroqAPIKey")
+GroqAPIKey = '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'
 
 # Initialize the Groq client using the API key.
 client = Groq(api_key=GroqAPIKey)

@@ -1,27 +1,59 @@
-# Importing required modules
-from Frontend.GUI import GraphicalUserInterface, SetAssistantStatus, ShowTextToScreen, TempDirectoryPath
-from GraphicalInterface import SetAssistantStatus, ShowTextToScreen
-from TempDirectoryPath import TempDirectoryPath
-from ShowTextToScreen import ShowTextToScreen
-from SetMicrophoneStatus import SetMicrophoneStatus, GetMicrophoneStatus
-from TempDirectoryPath import TempDirectoryPath
-from AnswerModifier import AnswerModifier, QueryModifier
-from QueryModifier import QueryModifier
-from GetMicrophoneStatus import GetMicrophoneStatus
-from GetAssistantStatus import GetAssistantStatus
+# Standard Library Imports
+import sys
+import random
+import datetime
+import json
+import os
+import subprocess
+import threading
+from time import sleep
+from asyncio import run
+
+# Third-Party Imports
+import pyttsx3
+import speech_recognition as sr
+from dotenv import dotenv_values
+from PyQt5.QtCore import (
+    Qt, QEvent, QTimer, QPropertyAnimation,
+    QEasingCurve, QSize, pyqtProperty
+)
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout,
+    QHBoxLayout, QLabel, QTextEdit, QLineEdit,
+    QPushButton, QFrame, QSizePolicy
+)
+from PyQt5.QtGui import (
+    QMovie, QFont, QIcon, QColor,
+    QTextCursor, QPalette
+)
+
+# Backend Components
 from backend.Model import FirstLayerDMM
 from backend.RealtimeSearchEngine import RealtimeSearchEngine
 from backend.Automation import Automation
 from backend.SpeechToText import SpeechRecognition
-from backend.ChatBot import ChatBot
+from backend.Chatbot import ChatBot
 from backend.TextToSpeech import TextToSpeech
-from dotenv import dotenv_values
-from asyncio import run
-from time import sleep
-import subprocess
-import json
-import os
+
+# Standard Library
+import sys
 import threading
+from time import sleep
+
+# Third-Party
+from PyQt5.QtWidgets import QApplication
+from dotenv import dotenv_values
+
+# Frontend Components
+from Frontend.GUI import JarvisWindow
+from Frontend.interface import (
+    SetAssistantStatus,
+    GetAssistantStatus,
+    ShowTextToScreen,
+    SetMicrophoneStatus,
+    GetMicrophoneStatus
+)
+
 
 # Load environment variables
 env_vars = dotenv_values(".env")
@@ -84,7 +116,7 @@ def MainExecution():
     TaskExecution = False
     ImageExecution = False
     ImageGenerationQuery = ""
-    
+
     SetAssistantStatus("Listening ...")
     Query = SpeechRecognition()
     ShowTextToScreen(f"{Username}: {Query}")
@@ -93,16 +125,16 @@ def MainExecution():
     print("")
     print(f"Decision : {Decision}")
     print("")
-    
+
     G = any([i for i in Decision if i.startswith("general")])
     R = any([i for i in Decision if i.startswith("realtime")])
     Merged_query = ' and '.join([''.join(i.split()[1:]) for i in Decision if i.startswith("general") or i.startswith("realtime")])
-    
+
     for queries in Decision:
         if "generate" in queries:
             ImageGenerationQuery = str(queries)
             ImageExecution = True
-    
+
     if ImageExecution:
         with open(r"Frontend\Files\ImageGeneration.data", "w") as file:
             file.write(f"{ImageGenerationQuery}, True")
@@ -113,7 +145,7 @@ def MainExecution():
             subprocesses.append(p1)
         except Exception as e:
             print(f"Error starting ImageGeneration.py: {e}")
-    
+
     if G and R or R:
         SetAssistantStatus("Searching ...")
         Answer = RealtimeSearchEngine(QueryModifier(Merged_query))
@@ -163,10 +195,10 @@ def FirstThread():
 
 def SecondThread():
     """Initialize and run the graphical user interface."""
-    GraphicalUserInterface()
+    JarvisWindow()
 
 # Main execution block
-if _name_ == "_main_":
+if __name__ == "__main__":
     InitialExecution()
     thread2 = threading.Thread(target=FirstThread, daemon=True)
     thread2.start()
