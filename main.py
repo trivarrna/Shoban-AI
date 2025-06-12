@@ -34,6 +34,9 @@ from backend.Automation import Automation
 from backend.SpeechToText import SpeechRecognition
 from backend.Chatbot import ChatBot
 from backend.TextToSpeech import TextToSpeech
+from backend.Chatbot import AnswerModifier
+from backend.SpeechToText import QueryModifier
+
 
 # Standard Library
 import sys
@@ -61,6 +64,11 @@ Username = env_vars.get("Username")
 Assistantname = env_vars.get("Assistantname")
 DefaultMessage = f"{{'Username'}}: Hello {Assistantname}, How are you? {{Assistantname}}: Welcome {Username}. I am doing well. How may I help you? ..."
 subprocesses = ["open", "close", "play", "system", "content", "google search", "youtube search"]
+
+
+def TempDirectoryPath(filename: str) -> str:
+    """Alternative if files are stored directly in Data directory"""
+    return os.path.join(os.path.dirname(__file__), "..", "Data", filename)
 
 # Chat log management functions
 def ShowDefaultChatIfNoChats():
